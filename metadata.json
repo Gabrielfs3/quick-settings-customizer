@@ -1,10 +1,9 @@
 {
-  "uuid": "quick-settings-customizer@gabrielfs3.github.com",
+  "uuid": "quick-settings-customizer@gabrielfs3.github.io",
   "name": "Quick Settings Customizer",
   "description": "Customize separate top-panel quick settings buttons and actions",
   "shell-version": ["46"],
   "url": "https://github.com/Gabrielfs3/quick-settings-customizer",
   "settings-schema": "org.gnome.shell.extensions.quick-settings-customizer",
-  "version-name": "1.0.0",
-  "version": 1
+  "version-name": "1.0.0"
 }

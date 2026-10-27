@@ -45,4 +45,4 @@ Do not enable this option together with another extension that also rearranges t
 Open Preferences from Extension Manager, or run:
 
 ```bash
-gnome-extensions prefs quick-settings-customizer@gabriel-silva_tkv.github.io
+gnome-extensions prefs quick-settings-customizer@gabrielfs3.github.io
