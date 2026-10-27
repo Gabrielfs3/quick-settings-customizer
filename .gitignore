@@ -1,0 +1,5 @@
+dist/
+*.shell-extension.zip
+schemas/gschemas.compiled
+__pycache__/
+*.pyc
