@@ -1,0 +1,57 @@
+.qsc-popup {
+    min-width: 320px;
+}
+
+.qsc-device-list {
+    max-height: 280px;
+}
+
+.qsc-popup .quick-toggle-menu {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.quick-settings.qsc-compact-system-menu {
+    padding: 12px;
+    border-radius: 20px;
+}
+
+.popup-menu.qsc-compact-system-shell {
+    min-width: 0;
+}
+
+.qsc-compact-system-menu .quick-settings-grid {
+    spacing-rows: 8px;
+    spacing-columns: 8px;
+}
+
+.quick-settings.qsc-compact-system-menu.qsc-compact-submenu-open {
+    min-width: 280px;
+}
+
+.qsc-compact-system-menu .quick-toggle.qsc-system-tile {
+    min-width: 44px;
+    max-width: 44px;
+    min-height: 44px;
+    border-radius: 12px;
+}
+
+.qsc-compact-system-menu .quick-toggle.qsc-system-tile > StBoxLayout {
+    padding: 0;
+    spacing: 0;
+}
+
+.qsc-system-tooltip {
+    padding: 6px 10px;
+}
+
+.qsc-battery-percentage {
+    font-size: 0.75em;
+    font-weight: bold;
+}
+
+.qsc-compact-system-menu .quick-toggle.qsc-system-tile.qsc-battery-with-percentage > StBoxLayout {
+    spacing: 2px;
+}

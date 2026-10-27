@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.quick-settings-customizer"
+          path="/org/gnome/shell/extensions/quick-settings-customizer/">
+    <key name="items" type="as">
+      <default>["wifi", "bluetooth", "sound"]</default>
+      <summary>Enabled quick settings items</summary>
+      <description>Built-in and custom item identifiers shown in the panel.</description>
+    </key>
+    <key name="custom-items" type="as">
+      <default>[]</default>
+      <summary>Custom quick settings items</summary>
+      <description>JSON-encoded custom item definitions.</description>
+    </key>
+    <key name="replace-quick-settings" type="b">
+      <default>false</default>
+      <summary>Replace the built-in Quick Settings button</summary>
+      <description>Hide GNOME's built-in Quick Settings indicator.</description>
+    </key>
+    <key name="panel-box" type="s">
+      <default>'right'</default>
+      <choices>
+        <choice value="left"/>
+        <choice value="center"/>
+        <choice value="right"/>
+      </choices>
+      <summary>Top panel section</summary>
+      <description>Panel section where custom buttons are placed.</description>
+    </key>
+    <key name="hidden-original-items" type="as">
+      <default>[]</default>
+      <summary>Hidden entries in the original Quick Settings menu</summary>
+      <description>Independent of which separate top-bar buttons are enabled.</description>
+    </key>
+    <key name="hidden-original-icons" type="as">
+      <default>[]</default>
+      <summary>Hidden icons in the original system indicator</summary>
+      <description>Hide original status icons without hiding the menu or separate buttons. Privacy indicators are preserved.</description>
+    </key>
+    <key name="manage-panel-layout" type="b">
+      <default>true</default>
+      <summary>Legacy global panel ordering setting</summary>
+      <description>Retained for upgrade compatibility. It no longer enables global panel ordering.</description>
+    </key>
+    <key name="manage-global-panel-layout" type="b">
+      <default>false</default>
+      <summary>Enable experimental global panel ordering</summary>
+      <description>Opt in to observing and moving third-party panel items. Disabled by default for stability.</description>
+    </key>
+    <key name="panel-layout" type="a{sas}">
+      <default>{}</default>
+      <summary>Individual top-bar placement and order</summary>
+      <description>Ordered status-area roles for the left, center and right sections. Empty uses the native layout with custom buttons immediately before original Quick Settings.</description>
+    </key>
+    <key name="panel-items" type="s">
+      <default>'[]'</default>
+      <summary>Live top-bar inventory</summary>
+      <description>Runtime-generated inventory for the layout preferences. This is not a user setting.</description>
+    </key>
+    <key name="custom-panel-spacing" type="b">
+      <default>true</default>
+      <summary>Use custom top-bar spacing</summary>
+      <description>Override horizontal button padding, extra icon margins and grouped indicator gaps. Disable to restore the current theme.</description>
+    </key>
+    <key name="panel-button-padding" type="i">
+      <range min="0" max="24"/>
+      <default>6</default>
+      <summary>Horizontal panel button padding per side</summary>
+    </key>
+    <key name="panel-button-spacing" type="i">
+      <range min="0" max="24"/>
+      <default>0</default>
+      <summary>Extra gap between panel buttons</summary>
+    </key>
+    <key name="panel-indicator-spacing" type="i">
+      <range min="0" max="24"/>
+      <default>4</default>
+      <summary>Gap between grouped status indicators</summary>
+    </key>
+    <key name="system-tiles" type="as">
+      <default>["settings", "power", "battery", "lock"]</default>
+      <summary>Enabled large system tiles in display order</summary>
+      <description>Each enabled tile replaces its compact counterpart inside the original menu. Disabling it restores the compact control.</description>
+    </key>
+    <key name="system-tile-labels" type="a{ss}">
+      <default>{}</default>
+      <summary>Custom labels for large system tiles</summary>
+    </key>
+    <key name="compact-system-tiles" type="b">
+      <default>true</default>
+      <summary>Use compact icon-only system tiles</summary>
+      <description>Show square action icons with hover labels instead of full-size labeled tiles. Accessible names and menu actions are preserved.</description>
+    </key>
+    <key name="compact-battery-percentage" type="b">
+      <default>true</default>
+      <summary>Show live percentage below the compact battery icon</summary>
+    </key>
+    <key name="hidden-system-controls" type="as">
+      <default>["screenshot"]</default>
+      <summary>Hidden compact controls in the system header</summary>
+      <description>Controls with a large tile enabled are shown as tiles; otherwise these compact icons are hidden.</description>
+    </key>
+    <key name="panel-item-aliases" type="a{ss}">
+      <default>{}</default>
+      <summary>Persistent panel identity migration aliases</summary>
+      <description>Maps transient runtime roles to stable application/object-path identities for restart-safe positions.</description>
+    </key>
+  </schema>
+</schemalist>
